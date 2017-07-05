@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DownloadImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qe6-7G-TzF">
+                                <rect key="frame" x="16" y="36" width="159" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8HR-0c-QrL">
+                                        <rect key="frame" x="0.0" y="0.0" width="159" height="150"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6X5-zj-sFb">
+                                        <rect key="frame" x="0.0" y="150" width="159" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6X5-zj-sFb" firstAttribute="leading" secondItem="qe6-7G-TzF" secondAttribute="leading" id="9cb-Pb-pZa"/>
+                                    <constraint firstAttribute="bottom" secondItem="6X5-zj-sFb" secondAttribute="bottom" id="Lft-hd-Z6W"/>
+                                    <constraint firstItem="8HR-0c-QrL" firstAttribute="top" secondItem="qe6-7G-TzF" secondAttribute="top" id="We1-bq-AKo"/>
+                                    <constraint firstAttribute="height" constant="300" id="XZH-MA-huA"/>
+                                    <constraint firstItem="8HR-0c-QrL" firstAttribute="leading" secondItem="qe6-7G-TzF" secondAttribute="leading" id="c6O-rQ-ulu"/>
+                                    <constraint firstAttribute="trailing" secondItem="8HR-0c-QrL" secondAttribute="trailing" id="dob-FA-VFM"/>
+                                    <constraint firstAttribute="trailing" secondItem="6X5-zj-sFb" secondAttribute="trailing" id="eyc-T1-so1"/>
+                                    <constraint firstItem="6X5-zj-sFb" firstAttribute="height" secondItem="8HR-0c-QrL" secondAttribute="height" id="lmg-Y0-y5W"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xfe-f3-6er">
+                                <rect key="frame" x="195" y="165" width="164" height="42"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgz-hi-t1d">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="21"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YG3-FO-49E">
+                                        <rect key="frame" x="0.0" y="21" width="164" height="21"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQU-EF-cp4">
+                                <rect key="frame" x="136" y="366" width="102" height="45"/>
+                                <color key="backgroundColor" red="0.87560513019999997" green="1" blue="0.38727328459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qPs-SM-NvV"/>
+                                    <constraint firstAttribute="width" constant="102" id="vSS-Cn-h4E"/>
+                                </constraints>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="btnDownloadClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaV-Ui-WIe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xQU-EF-cp4" firstAttribute="top" secondItem="qe6-7G-TzF" secondAttribute="bottom" constant="30" id="1V4-bu-LKC"/>
+                            <constraint firstAttribute="trailing" secondItem="qe6-7G-TzF" secondAttribute="trailing" constant="200" id="HFb-P3-rAA"/>
+                            <constraint firstItem="qe6-7G-TzF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Pcv-jW-UW1"/>
+                            <constraint firstItem="Xfe-f3-6er" firstAttribute="centerY" secondItem="qe6-7G-TzF" secondAttribute="centerY" id="l3C-Sm-hVn"/>
+                            <constraint firstItem="qe6-7G-TzF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="lBl-aJ-lGt"/>
+                            <constraint firstItem="xQU-EF-cp4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mav-I8-dzE"/>
+                            <constraint firstItem="Xfe-f3-6er" firstAttribute="leading" secondItem="qe6-7G-TzF" secondAttribute="trailing" constant="20" id="nNv-OM-BQw"/>
+                            <constraint firstAttribute="trailing" secondItem="Xfe-f3-6er" secondAttribute="trailing" constant="16" id="wY8-kK-qiQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgDownload1" destination="8HR-0c-QrL" id="eGo-am-Ry2"/>
+                        <outlet property="imgDownload2" destination="6X5-zj-sFb" id="GlS-Ye-6LI"/>
+                        <outlet property="txtURL1" destination="fgz-hi-t1d" id="RM7-hg-l9W"/>
+                        <outlet property="txtURL2" destination="YG3-FO-49E" id="nqY-Mm-yg2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
